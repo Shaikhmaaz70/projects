@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+     <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text -200 transition duration-700 ">
+   
+    <div class="min-h-screen flex">
+        <aside class="w-64 bg-white dark:bg-gray-800 shadow-lg hidden md:block ">
+           
+            <div class="p-6 font-bold text-2xl text-white border-b border-gray-200 dark:border-700">
+                Dashboard
+            </div>
+            <nav class="p-6 space-y-4">
+                <a href="#" class="block px-4 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition text-white">Home</a>
+                <a href="#" class="block px-4 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition text-white">Analytics</a>
+                <a href="#" class="block px-4 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition text-white">Projects</a>
+                <a href="#" class="block px-4 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition text-white">Settings</a>
+            </nav>
+        </aside>
+
+        <div class="flex-1 flex flex-col">
+
+            <header class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex justify-between items-center text-white">
+                <h1 class="text-xl font-bold">Welcome Boy 👋</h1>
+                <button id="darktoggle" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition"> 🌙 Toggle Dark</button>
+            </header>
+
+            <main class="p-6 space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <div class="p-6 dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition">
+                       <h2 class="text-lg font-semibold text-white">User</h2>
+                       <p class="mt-2 text-3xl font-bold text-white">1235</p>
+                    </div>
+
+                    
+                    <div>
+                        <div class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition">
+                         <h2 class="text-lg font-semibold text-white">Revenue</h2>
+                       <p class="mt-2 text-3xl font-bold text-white">$23,500</p>
+                    </div>
+                    </div>
+                    <div class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition">
+                         <h2 class="text-lg font-semibold text-white">Orders</h2>
+                       <p class="mt-2 text-3xl font-bold text-white">320</p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden">
+                <table class="w-full text-leaft border-collapse">
+                    <thead class="bg-gray-200 dark:bg-gray-700 text-left">
+                        <tr>
+                            <th class="px-6 py-3 text-white">Project</th>
+                            <th class="px-6 py-3 text-white">Status</th>
+                            <th class="px-6 py-3 text-white">Deadline</th>
+                        </tr>
+                    </thead>
+
+                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 text-white transition">
+                        <TD class="px-6 py-3">Website Redesign</TD>
+                        <td class="px-6 py-3 text-green-500 font-semibold">Completed</td>
+                        <td class="px-6 py-3">Aug 25,2025</td>
+                    </tr>
+
+                                        <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 text-white transition">
+                        <td class="px-6 py-3">Mobile App</td>
+                        <td class="px-6 py-3 text-yellow-500 font-semibold">In Profress</td>
+                        <td class="px-6 py-3">Sep 12,2025</td>
+                    </tr>
+
+
+                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700 text-white transition">
+                        <td class="px-6 py-3">Markiting Campaign</td>
+                        <td class="px-6 py-3">Pending </td>
+                        <td class="px-6 py-3">Oct 01,2025</td>
+                    </tr>
+
+                </table>    
+
+                </div>
+            </main>
+        </div>
+
+    </div>
+    
+</body>
+</html>
